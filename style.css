@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+#difficulty{
+    text-align: start;
+    padding: 2px;
+    margin: 0 10px;
+    width: 200px;
+}
+
+#play{
+    padding: 2px 12px;
+}
+
+/* main */
+
+main{
+    background-color: aquamarine;
+}
+
+.container-main{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    display: none;
+
+}
+
+.square{
+    height: calc(100% /10);
+    width: calc(100% /10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.active{
+    display: flex;
+}
+
+.square-green{
+    background-color: green;
+}
+
