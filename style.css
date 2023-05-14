@@ -46,14 +46,26 @@ main{
 }
 
 .square{
-    height: calc(100% /10);
-    width: calc(100% /10);
     border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.square-easy{
+    height: calc(100% /10);
+    width: calc(100% /10);
+}
+
+.square-normal{
+    height: calc(100% /9);
+    width: calc(100% /9);
+}
+
+.square-hard{
+    height: calc(100% /7);
+    width: calc(100% /7);
+}
 
 
 .active{
