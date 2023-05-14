@@ -7,10 +7,6 @@ let score= 0;
 play.addEventListener('click', startGame)
 function startGame(){
 
-    let arrayNumeri= randomNumber(16, 1, 100);
-    console.log(arrayNumeri);
-
-
     // Facciamo apparire la griglia
     grid.classList.add('active');
 
@@ -24,22 +20,20 @@ function startGame(){
     if(difficulty === "easy"){
         numCelle = 100;
         classe="square-easy";
-        arrayNumeri= randomNumber(16, 1, 100)
 
     }else if(difficulty === "normal"){
         numCelle = 81;
         classe="square-normal";
-        arrayNumeri= randomNumber(16, 1, 81)
 
     }else if(difficulty === "hard"){
         numCelle = 49;
         classe="square-hard";
-        arrayNumeri= randomNumber(16, 1, 49)
 
     }
-
+    let arrayNumeri= randomNumber(16, 1, numCelle);
+    console.log(arrayNumeri);
     // Creiamo 100 square
-    for (let i = 1; i < numCelle + 1; i++){
+    for (let i = 1; i <= numCelle ; i++){
         
         // Tramite la funzione andiamo a creare i due elementi
         const newSquare = createGridSquare("div", "square");
